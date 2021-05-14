@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - ground
+  - spikeenemy
+  - button
+  - PlayerInteractionZone
+  - Box
+  - Minibox
+  - Breakbox
+  - Key
+  - BossZone
+  - Boss
+  - KeyPoint
+  - "EnterCaba\xF1a"
+  - wall
+  - GreenButton
+  - Platforms
+  - chainsaw
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - CheckGround
+  - Enemies && Triggers
+  - EnemiesColliders
+  - Player
+  - MiniBox
+  - Platforms
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Decorations
+    uniqueID: 2371656375
+    locked: 0
+  - name: Enemies
+    uniqueID: 9357539
+    locked: 0
+  - name: Ground
+    uniqueID: 2738945031
+    locked: 0
+  - name: Player
+    uniqueID: 730216841
+    locked: 0
