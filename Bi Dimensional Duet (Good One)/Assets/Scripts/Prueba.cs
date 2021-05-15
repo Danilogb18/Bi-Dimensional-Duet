@@ -7,7 +7,7 @@ public class Prueba : MonoBehaviour
     
     void Start()
     {
-        
+        transform.position = transform.position;
     }
 
     // Update is called once per frame
