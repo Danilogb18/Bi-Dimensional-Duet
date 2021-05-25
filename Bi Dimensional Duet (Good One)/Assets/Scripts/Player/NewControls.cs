@@ -187,8 +187,7 @@ public class NewControls : MonoBehaviour
 
     public void ShowKey()
     {
-      
-       Key.SetActive(true);
+        Key.SetActive(true);
     }
 
     IEnumerator RestartLevel()
@@ -203,8 +202,5 @@ public class NewControls : MonoBehaviour
         yield return new WaitForSeconds(3);
         DamageObject.vulnerable = true;
     }
-
-
-
     
 }

@@ -6,6 +6,9 @@ public class BossZone : MonoBehaviour
 {
     public GameObject bossSlider;
     public GameObject boss;
+    public GameObject pyramidChainsaw;
+
+    public Animator bossName;
 
     void Start()
     {
@@ -23,7 +26,10 @@ public class BossZone : MonoBehaviour
         if (other.transform.tag == "Player")
         {
             bossSlider.SetActive(true);
+            bossName.SetBool("ShowBossName", true);
             boss.SetActive(true);
+            pyramidChainsaw.SetActive(true);
+            Destroy(gameObject);
             
         }
     }

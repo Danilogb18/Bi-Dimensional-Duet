@@ -32,6 +32,11 @@ public class AdvancedAI : MonoBehaviour
     public Slider lifeSlide;
 
     int rand;
+
+    //things neededfor the cutscene here
+    public PyramidDeathCutScene winScript;
+    
+
     
     void Start()
     {
@@ -51,7 +56,9 @@ public class AdvancedAI : MonoBehaviour
 
         if (pyramidLife <= 0)
         {
+            winScript.WinScene();
             Destroy(gameObject);
+            
         }
 
         if (pyramidLife <= 10)
@@ -221,8 +228,5 @@ public class AdvancedAI : MonoBehaviour
 
 
     }
-    
 
-    
-   
 }

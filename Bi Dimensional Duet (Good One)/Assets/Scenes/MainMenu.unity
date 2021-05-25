@@ -3563,7 +3563,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "Juego y gr\xE1ficos por Danilo Garc\xEDa.\n\nM\xFAsica: syncopika/Opengameart\nHorrorPen/Opengameart"
+  m_Text: "Juego y gr\xE1ficos por Danilo Garc\xEDa.\n\nM\xFAsica: syncopika/Opengameart\nHorrorPen/Opengameart\nLisboa/Opengameart"
 --- !u!222 &2079530990
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -5,11 +5,15 @@ using UnityEngine;
 public class DamageThePyramid : MonoBehaviour
 {
     private bool bossVulnerable = true;
-    
+    private ChangeColor changeColorScript;
+
+    public Transform impactPoint;
+    public GameObject particles;
 
     void Start()
     {
         bossVulnerable = true;
+        changeColorScript = GetComponent<ChangeColor>();
     }
 
    
@@ -21,10 +25,14 @@ public class DamageThePyramid : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.transform.tag == "chainsaw")
+        if (other.transform.tag == "chainsaw" && bossVulnerable)
         {
             {
-                AdvancedAI.pyramidLife = AdvancedAI.pyramidLife-2.3f;
+                bossVulnerable = false;
+                AdvancedAI.pyramidLife = AdvancedAI.pyramidLife-2.2f;
+                Instantiate(particles, impactPoint.position, Quaternion.identity);
+                changeColorScript.ChangeToHitColor();
+                StartCoroutine(makeBossVulnerable());
             }
         }
     }
@@ -32,7 +40,7 @@ public class DamageThePyramid : MonoBehaviour
 
     IEnumerator makeBossVulnerable()
     {
-        yield return new WaitForSeconds (5);
+        yield return new WaitForSeconds (2);
         bossVulnerable = true;
         //Debug.Log(Boss.bossLife);
         //CheckGround.canJump = true;

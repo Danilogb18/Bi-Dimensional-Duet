@@ -512,7 +512,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7ebda19c5259d456c9cb726728b687aa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7e3a5301e1bb04e84ab76d0ab8af7178, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.08
   m_Pitch: 1
@@ -23076,7 +23076,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -86.4, y: -43.200005, z: -8.7}
+  m_LocalPosition: {x: -67.1, y: -176.7, z: -8.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1425404316}
@@ -27291,7 +27291,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -31990,7 +31990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160223424}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -221.84024, y: 158.95898, z: 190.35025}
+  m_LocalPosition: {x: -202.54025, y: 25.458984, z: 190.35025}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 179449259}
@@ -42704,7 +42704,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -4711542747603351098, guid: c1f03d15912ca4e83819c9f58eb53d0a,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -42726,6 +42726,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b7ca0c156e74d59ba29ceff64e2974, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rend: {fileID: 760601335}
+  colorToChange: {r: 1, g: 0, b: 0, a: 1}
+  initialColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1562111134
 GameObject:
   m_ObjectHideFlags: 0
@@ -112370,12 +112373,12 @@ PrefabInstance:
     - target: {fileID: 8021516583961400507, guid: 2b15cb11d696a493d9696c2cf400ef1c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -86.4
+      value: -67.1
       objectReference: {fileID: 0}
     - target: {fileID: 8021516583961400507, guid: 2b15cb11d696a493d9696c2cf400ef1c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -43.2
+      value: -176.7
       objectReference: {fileID: 0}
     - target: {fileID: 8021516583961400507, guid: 2b15cb11d696a493d9696c2cf400ef1c,
         type: 3}

@@ -5,11 +5,18 @@ using UnityEngine;
 public class DamageTheBoss : MonoBehaviour
 {
    private bool bossVulnerable = true;
+
+
+    public Renderer rend;
+
+    public Color colorToChange;
+
+    public Color initialColor;
     
 
     void Start()
     {
-        
+        initialColor = rend.material.color;
     }
 
    
@@ -24,7 +31,8 @@ public class DamageTheBoss : MonoBehaviour
         {
         bossVulnerable = false;
         Boss.bossLife = Boss.bossLife-3;
-        
+        rend.material.color = colorToChange;
+        StartCoroutine(NormalColor());
         StartCoroutine((makeBossVulnerable()));    
    
         }
@@ -38,5 +46,12 @@ public class DamageTheBoss : MonoBehaviour
         //Debug.Log(Boss.bossLife);
         //CheckGround.canJump = true;
         //animator.SetBool("jumping", false);
+    }
+
+
+    IEnumerator NormalColor()
+    {
+        yield return new WaitForSeconds(0.7f);
+        rend.material.color = initialColor;
     }
 }

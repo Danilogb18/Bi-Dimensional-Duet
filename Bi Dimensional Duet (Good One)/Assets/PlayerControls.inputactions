@@ -253,6 +253,61 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "2D Vector",
+                    "id": "9b4112f2-4de3-4ff0-98e0-1de34d4a8558",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "f7e68040-f9c9-445b-8aba-38da2aab0242",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "36f350d2-dca8-4da4-98e9-d4e08703963c",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "9f059626-21ec-4421-83ea-98dda0b28747",
+                    "path": "<HID::Unknown Joy-Con (R)>/hat/left",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "30a79048-909a-4053-b6a0-f8134b81aa48",
+                    "path": "<HID::Unknown Joy-Con (R)>/hat/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "f79ee4c3-b781-4717-b01a-6a13986942b7",
                     "path": "<Keyboard>/space",
@@ -289,6 +344,17 @@
                     "name": "",
                     "id": "dd97c322-a5a6-4c29-a15a-c608d7db3cbb",
                     "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "70609f00-c84b-44e2-8c4b-361c4f70932e",
+                    "path": "<HID::Unknown Joy-Con (R)>/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -364,6 +430,39 @@
                 },
                 {
                     "name": "2D Vector",
+                    "id": "b0037f45-feed-49f4-954f-a83378c15935",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "194bc77a-812d-490c-a6ca-ff4d73f179bf",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "0b751662-928d-4590-bccf-c0129e017e40",
+                    "path": "<HID::Unknown Joy-Con (R)>/button3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Grab",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "2D Vector",
                     "id": "c95cc274-d93a-4bbc-8854-a23b1dd2b9dc",
                     "path": "2DVector",
                     "interactions": "Press",
@@ -429,6 +528,39 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "2D Vector",
+                    "id": "0ff8e881-b644-4a8b-b0b6-4637f4ff0956",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Change",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "0b89f859-8e0f-4720-b0c8-5cdda616e6c1",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Change",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b4cf810d-10cb-430f-960d-db8646704137",
+                    "path": "<HID::Unknown Joy-Con (R)>/button4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Change",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "f261e021-786b-445a-b3e9-2c9f9867d923",
                     "path": "<HID::Unknown DUALSHOCK 4 Wireless Controller>/button2",
@@ -443,6 +575,17 @@
                     "name": "",
                     "id": "c96a29d2-6f56-4676-84ee-6b149bc58346",
                     "path": "<Keyboard>/enter",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accept",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d128f2ad-6b2c-4eaf-b859-796c8cc416ef",
+                    "path": "<HID::Unknown Joy-Con (R)>/button2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -529,8 +672,30 @@
                 },
                 {
                     "name": "",
+                    "id": "27b7eefe-e107-4ccf-9fdf-7727524933fc",
+                    "path": "<HID::Unknown Joy-Con (R)>/button3",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "EnterCabaña",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "e8d9ac6a-e0da-4c26-ac0c-f93fc0381ad1",
                     "path": "<Keyboard>/h",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Talk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c34d691f-fd74-45f4-9dad-34d002e29b2d",
+                    "path": "<HID::Unknown Joy-Con (R)>/button3",
                     "interactions": "Press",
                     "processors": "",
                     "groups": "",
