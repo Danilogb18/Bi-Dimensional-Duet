@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class BossZone : MonoBehaviour 
 {
@@ -9,6 +10,8 @@ public class BossZone : MonoBehaviour
     public GameObject pyramidChainsaw;
 
     public Animator bossName;
+    public AudioSource pyramidFightMusic;
+    public AudioSource desertMusic;
 
     void Start()
     {
@@ -26,6 +29,8 @@ public class BossZone : MonoBehaviour
         if (other.transform.tag == "Player")
         {
             bossSlider.SetActive(true);
+            pyramidFightMusic.Play();
+            desertMusic.Stop();
             bossName.SetBool("ShowBossName", true);
             boss.SetActive(true);
             pyramidChainsaw.SetActive(true);

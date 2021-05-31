@@ -33,6 +33,10 @@ public class NewControls : MonoBehaviour
     bool canCall = true;
 
 
+
+    public Animator bossText;
+
+
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
@@ -171,6 +175,7 @@ public class NewControls : MonoBehaviour
         {
             Debug.Log("bosszone");
             door.SetBool("open", false);
+            bossText.SetBool("ShowBossName", true);
             Destroy(other.gameObject);
             boss.SetActive(true);
             bossSlider.SetActive(true);

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class DamageThePyramid : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class DamageThePyramid : MonoBehaviour
 
     public Transform impactPoint;
     public GameObject particles;
+    public AudioSource hitSound;
 
     void Start()
     {
@@ -29,6 +31,7 @@ public class DamageThePyramid : MonoBehaviour
         {
             {
                 bossVulnerable = false;
+                hitSound.Play();
                 AdvancedAI.pyramidLife = AdvancedAI.pyramidLife-2.2f;
                 Instantiate(particles, impactPoint.position, Quaternion.identity);
                 changeColorScript.ChangeToHitColor();
