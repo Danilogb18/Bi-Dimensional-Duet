@@ -35,20 +35,29 @@ public class AdvancedAI : MonoBehaviour
 
     //things neededfor the cutscene here
     public PyramidDeathCutScene winScript;
-    
+    Dialogue dialogueScript;
 
+    bool canCall = true;
+
+    public static bool pyramidDefeated;
+    
+ 
     
     void Start()
     {
         callCoroutine = true;
+        pyramidDefeated = false;
         initialPos = new Vector2(transform.position.x, transform.position.y);
         pointToGo = pointToGoTransform.position;
         pointToGo2 = pointToGoTransform2.position;
         pyramidLife = 20;
+        dialogueScript = GetComponent<Dialogue>();
+        pyramidDefeated = false;
     }
 
     private void Update()
     {
+
         if(canChangeState)
         {
         //StartCoroutine(ChangeState());
@@ -57,7 +66,12 @@ public class AdvancedAI : MonoBehaviour
         if (pyramidLife <= 0)
         {
             winScript.WinScene();
-            Destroy(gameObject);
+            if (canCall)
+            {
+            canCall = false;
+            DeadTalk();
+            }
+            //Destroy(gameObject);
             
         }
 
@@ -228,5 +242,25 @@ public class AdvancedAI : MonoBehaviour
 
 
     }
+
+    public void DeadTalk()
+    {
+        
+        
+           pyramidDefeated = true;
+           canCall = false;
+           firstAttack = false;
+           shootAttack = false;
+           fallingAttack = false;
+           spriteAnim.SetTrigger("Dead");
+           dialogueScript.canTalk = false;
+           dialogueScript.Talk(); 
+           Debug.Log("deadscene");
+        
+        
+    }
+
+
+    
 
 }

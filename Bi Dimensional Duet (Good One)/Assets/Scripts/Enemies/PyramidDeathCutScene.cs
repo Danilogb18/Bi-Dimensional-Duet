@@ -9,9 +9,11 @@ public class PyramidDeathCutScene : MonoBehaviour
     public GameObject platform;
     public GameObject pyramidChainsaw;
 
+    private bool canCall;
+
     void Start()
     {
-        
+        canCall = true;
     }
 
 
@@ -22,10 +24,14 @@ public class PyramidDeathCutScene : MonoBehaviour
 
     public void WinScene()
     {
-       NewControls.canPlay = false;
-       Destroy(pyramidChainsaw);
-       cameraControlerAnim.SetBool("winScene", true);
-       StartCoroutine(WinSceneCorroutine());
+        if (canCall)
+           {    
+           canCall = false;
+           NewControls.canPlay = false;
+           Destroy(pyramidChainsaw);
+           cameraControlerAnim.SetBool("winScene", true);
+           StartCoroutine(WinSceneCorroutine());
+           }
     }
 
 
@@ -36,6 +42,7 @@ public class PyramidDeathCutScene : MonoBehaviour
         yield return new WaitForSeconds(2);
         NewControls.canPlay = true;
         cameraControlerAnim.SetBool("winScene", false);
+        Debug.Log("wincorrutine");
 
     }
 }

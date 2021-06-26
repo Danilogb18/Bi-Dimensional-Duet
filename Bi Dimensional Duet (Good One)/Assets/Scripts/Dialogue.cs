@@ -22,11 +22,13 @@ public class Dialogue : MonoBehaviour
     public int paragraphsRead = 0;
 
 
-    public bool lastParagraph;
+    public static bool lastParagraph;
     private bool finishedStory = false;
-    private bool canTalk = false;
+    public bool canTalk = false;
     private bool canSkip;
     private bool canCall;
+
+    public int paragraphsToSkipBeggining;
 
 
     void Start()
@@ -37,6 +39,7 @@ public class Dialogue : MonoBehaviour
         finishedStory = false;
         canSkip = false;
         canCall = true;
+        canTalk = false;
 
     }
 
@@ -160,10 +163,11 @@ public class Dialogue : MonoBehaviour
 
         canCall = false;
         StartCoroutine("Adelantar");
-        if (canTalk){
+        if (canTalk || AdvancedAI.pyramidDefeated){
         Debug.Log("talking");
          textD.text = "";
-         index = paragraphs.Length - 3;
+         canTalk = false;
+         index = 0 + paragraphsToSkipBeggining;
          PanelManager.canPause = false;
          lastParagraph = false;
          dialoguePanel.SetActive(true);
