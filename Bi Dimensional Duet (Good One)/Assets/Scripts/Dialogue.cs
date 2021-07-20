@@ -14,6 +14,8 @@ public class Dialogue : MonoBehaviour
     private int index = 0;
     public float charVel;
 
+    public bool pyramidDialogue;
+
 
     public GameObject okButton;
     public GameObject dialoguePanel;
@@ -122,6 +124,11 @@ public class Dialogue : MonoBehaviour
         NewControls.canPlay = true;
         finishedStory = true;
         PanelManager.canPause = true;
+        if (pyramidDialogue)
+        {
+            AdvancedAI.dialogueEnded = true;
+            Debug.Log("conversacionjefe");
+        }
         }
     }
 

@@ -26,7 +26,7 @@ public class Vertices : MonoBehaviour
         thisVertice = this.gameObject;
         if(PlayerPrefs.GetInt("Checkpoint") == 0)
         {
-            Debug.Log("se aparecen");
+            //Debug.Log("se aparecen");
             PlayerPrefs.SetInt("Vertice1", 1);
             PlayerPrefs.SetInt("Vertice2", 1);
             PlayerPrefs.SetInt("Vertice3", 1);

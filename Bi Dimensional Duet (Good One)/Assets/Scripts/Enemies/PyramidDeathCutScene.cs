@@ -8,6 +8,7 @@ public class PyramidDeathCutScene : MonoBehaviour
     public Animator cameraControlerAnim;
     public GameObject platform;
     public GameObject pyramidChainsaw;
+    public GameObject bossSlider;
 
     private bool canCall;
 
@@ -42,7 +43,6 @@ public class PyramidDeathCutScene : MonoBehaviour
         yield return new WaitForSeconds(2);
         NewControls.canPlay = true;
         cameraControlerAnim.SetBool("winScene", false);
-        Debug.Log("wincorrutine");
-
+        bossSlider.SetActive(false);
     }
 }

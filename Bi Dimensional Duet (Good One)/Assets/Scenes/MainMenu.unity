@@ -3527,8 +3527,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 46, y: -285}
-  m_SizeDelta: {x: 1320.8447, y: 545.35925}
+  m_AnchoredPosition: {x: 46, y: -197.78}
+  m_SizeDelta: {x: 1320.8447, y: 618.9137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2079530989
 MonoBehaviour:
@@ -3551,7 +3551,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: d26ce5fc0b0a6443db9a9f9b047a7fc3, type: 3}
+    m_Font: {fileID: 12800000, guid: 4ce6d6c7e307b4adc9f85008b9f06130, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -3562,8 +3562,8 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 2
-  m_Text: "Juego y gr\xE1ficos por Danilo Garc\xEDa.\n\nM\xFAsica: syncopika/Opengameart\nHorrorPen/Opengameart\nLisboa/Opengameart"
+    m_LineSpacing: 1
+  m_Text: "Juego y gr\xE1ficos por Danilo Garc\xEDa.\n\nM\xFAsica: syncopika/Opengameart\nHorrorPen/Opengameart\nLisboa/Opengameart\nQuebi/NewGrounds\nLeon333/NewGrounds"
 --- !u!222 &2079530990
 CanvasRenderer:
   m_ObjectHideFlags: 0

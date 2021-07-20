@@ -40,6 +40,11 @@ public class AdvancedAI : MonoBehaviour
     bool canCall = true;
 
     public static bool pyramidDefeated;
+
+    public static bool dialogueEnded;
+
+
+    public GameObject bossChainsaw; //referencia a la sierra de la sala de jefe para desactivarla a final
     
  
     
@@ -53,6 +58,7 @@ public class AdvancedAI : MonoBehaviour
         pyramidLife = 20;
         dialogueScript = GetComponent<Dialogue>();
         pyramidDefeated = false;
+        dialogueEnded = false;
     }
 
     private void Update()
@@ -65,11 +71,12 @@ public class AdvancedAI : MonoBehaviour
 
         if (pyramidLife <= 0)
         {
-            winScript.WinScene();
+            //winScript.WinScene();
             if (canCall)
             {
-            canCall = false;
-            DeadTalk();
+            canCall = false; 
+            DeadTalk(); 
+            bossChainsaw.SetActive(false);
             }
             //Destroy(gameObject);
             
@@ -81,6 +88,12 @@ public class AdvancedAI : MonoBehaviour
         }
 
         lifeSlide.value = pyramidLife;
+
+        if(dialogueEnded)
+        {
+            Destroy(gameObject);
+            winScript.WinScene();
+        }
 
 
         
@@ -96,7 +109,7 @@ public class AdvancedAI : MonoBehaviour
         canDecidePoint = true;
         if (callCoroutine)
         {
-        StartCoroutine("PlayerPosition");
+        StartCoroutine("PlayerPosition"); 
         }
           
         }

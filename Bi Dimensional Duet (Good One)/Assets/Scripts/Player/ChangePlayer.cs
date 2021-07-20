@@ -36,6 +36,10 @@ public class ChangePlayer : MonoBehaviour
     private bool notJustChanging = true;
 
 
+    public static bool firstChange; //para mostrar el consejo del triangulo
+    public GameObject changeAdvice; //el consejo del triangulo
+
+
     void Start()
     {
         if(PlayerPrefs.GetInt("Checkpoint") == 1) // 1 es verdadero y 0 es falso.
@@ -66,11 +70,14 @@ public class ChangePlayer : MonoBehaviour
                 newControls.ShowKey();
                 GetKey.gotKey = true;
             }
+
+            
         
     }
 
     void Awake()
     {
+       firstChange = true;
        controls = new PlayerControls();
     }
 
@@ -124,6 +131,11 @@ public class ChangePlayer : MonoBehaviour
             changeSound.Play();
             DamageObject.life = 3;
             GuardarPartida();
+            if (firstChange)
+            {
+                firstChange = false;
+                StartCoroutine("ChangeAdvice");
+            }
             StartCoroutine("CheckPointMessage");
         }
 
@@ -247,6 +259,17 @@ public class ChangePlayer : MonoBehaviour
             bossAdvicePanel.SetActive(true);
             NewControls.canPlay = false;
         }
+    }
+
+    public void HideChangeAdvice()
+    {
+        changeAdvice.SetActive(false);
+    }
+
+    IEnumerator ChangeAdvice()
+    {
+        yield return new WaitForSeconds(2);
+        changeAdvice.SetActive(true);
     }
 
 
