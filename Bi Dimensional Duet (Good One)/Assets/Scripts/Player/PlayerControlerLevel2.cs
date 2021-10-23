@@ -30,12 +30,20 @@ public class PlayerControlerLevel2 : MonoBehaviour
         rb = this.GetComponent<Rigidbody2D>();
         playeranim = this.GetComponent<Animator>();
         canPlay = true;
+
     }
 
 
     void Awake()
     {
        controls = new PlayerControls();
+        //Screen.SetResolution(1920, 1080, true);
+    }
+
+    private void Update() {
+
+        //Screen.SetResolution(1920, 1080, true);
+        
     }
 
 

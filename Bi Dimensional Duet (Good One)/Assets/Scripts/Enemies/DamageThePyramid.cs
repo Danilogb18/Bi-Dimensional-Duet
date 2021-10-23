@@ -32,7 +32,7 @@ public class DamageThePyramid : MonoBehaviour
             {
                 bossVulnerable = false;
                 hitSound.Play();
-                AdvancedAI.pyramidLife = AdvancedAI.pyramidLife-20f;
+                AdvancedAI.pyramidLife = AdvancedAI.pyramidLife-3f;
                 Instantiate(particles, impactPoint.position, Quaternion.identity);
                 changeColorScript.ChangeToHitColor();
                 StartCoroutine(makeBossVulnerable());

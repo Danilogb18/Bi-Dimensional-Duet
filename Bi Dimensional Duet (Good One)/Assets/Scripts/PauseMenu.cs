@@ -129,7 +129,7 @@ public class PauseMenu : MonoBehaviour
             soundButton.SetBool("audioActivated", false);
             press.Play();
 
-            audioListener.enabled = false;
+            AudioListener.volume = 0f;
 
             
 
@@ -150,7 +150,7 @@ public class PauseMenu : MonoBehaviour
             soundButton.SetBool("audioActivated", true);
             press.Play();
 
-           audioListener.enabled = true;
+           AudioListener.volume = 1f;
 
           //  foreach (GameObject a in sonidos)
          //   {

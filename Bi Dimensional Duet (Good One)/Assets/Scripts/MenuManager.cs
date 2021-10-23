@@ -59,6 +59,7 @@ public class MenuManager : MonoBehaviour
     void Update()
     {
        
+        //Screen.SetResolution(1920, 1080, true);
       
     }
 

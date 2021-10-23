@@ -215,28 +215,28 @@ public class ChangePlayer : MonoBehaviour
 
         if(PlayerPrefs.GetInt("ActualLevel") == 2)
        {
-     //  scriptVertices2.SaveVertices();
-        if(PlayerPrefs.GetInt("Checkpoint") == 1){
-        cubito.transform.position = new Vector3(firstTransformer.transform.position.x, firstTransformer.transform.position.y + 15, 1.3f);
-        //cubito.transform.position = new Vector3(lastTransformer.transform.position.x, lastTransformer.transform.position.y + 15, 1.3f);
-        triangulo.transform.position = new Vector3(firstTransformer.transform.position.x, firstTransformer.transform.position.y + 15, 1.3f);
-        //triangulo.transform.position = new Vector3(lastTransformer.transform.position.x, lastTransformer.transform.position.y + 15, 1.3f);
-        Debug.Log("firstCheckpoint");
-        miniBox.position = new Vector3(-895, -297, 1);
-        particles.SetActive(true);
-        CheckGround.platformController = true;
-
-        }
-
-        else if(PlayerPrefs.GetInt("Checkpoint") == 2){
-        cubito.transform.position = new Vector3(secondTransformer.transform.position.x, secondTransformer.transform.position.y + 15, 1.3f);
-        triangulo.transform.position = new Vector3(secondTransformer.transform.position.x, secondTransformer.transform.position.y + 15, 1.3f);
-        Debug.Log("segundocheckpoint");
-        miniBox.position = new Vector3(-895, -297, 1);
-        particles.SetActive(true);
-        CheckGround.platformController = true;
-
-        }
+     //        scriptVertices2.SaveVertices();
+            if(PlayerPrefs.GetInt("Checkpoint") == 1){
+            cubito.transform.position = new Vector3(firstTransformer.transform.position.x, firstTransformer.transform.position.y + 15, 1.3f);
+            //cubito.transform.position = new Vector3(lastTransformer.transform.position.x, lastTransformer.transform.position.y + 15, 1.3f);
+            triangulo.transform.position = new Vector3(firstTransformer.transform.position.x, firstTransformer.transform.position.y + 15, 1.3f);
+            //triangulo.transform.position = new Vector3(lastTransformer.transform.position.x, lastTransformer.transform.position.y + 15, 1.3f);
+            Debug.Log("firstCheckpoint"); 
+            miniBox.position = new Vector3(-895, -297, 1);
+            particles.SetActive(true);
+            CheckGround.platformController = true;
+    
+            }
+    
+            else if(PlayerPrefs.GetInt("Checkpoint") == 2){
+            cubito.transform.position = new Vector3(secondTransformer.transform.position.x, secondTransformer.transform.position.y + 15, 1.3f);
+            triangulo.transform.position = new Vector3(secondTransformer.transform.position.x, secondTransformer.transform.position.y + 15, 1.3f);
+            Debug.Log("segundocheckpoint");
+            miniBox.position = new Vector3(-895, -297, 1);
+            particles.SetActive(true);
+            CheckGround.platformController = true;
+    
+            }
        }
 
        if(PlayerPrefs.GetInt("ActualLevel") == 1)
@@ -276,3 +276,9 @@ public class ChangePlayer : MonoBehaviour
 
 
 }
+
+
+
+
+
+
