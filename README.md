@@ -43,12 +43,12 @@ the strange geometric creatures waiting at the end of each area.
 ## Screenshots
 
 <p align="center">
-  <img src="docs/screenshots/grassland.png" width="45%" alt="Grassland level">
-  <img src="docs/screenshots/desert.png" width="45%" alt="Desert level">
+  <img src="grassland.png" width="45%" alt="Grassland level">
+  <img src="desert.png" width="45%" alt="Desert level">
 </p>
 <p align="center">
-  <img src="docs/screenshots/boss-cube.png" width="45%" alt="Cube boss fight">
-  <img src="docs/screenshots/boss-pyramid.png" width="45%" alt="Pyramid boss fight">
+  <img src="boss-cube.png" width="45%" alt="Cube boss fight">
+  <img src="boss-pyramid.png" width="45%" alt="Pyramid boss fight">
 </p>
 
 ## Context
